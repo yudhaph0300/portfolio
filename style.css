@@ -4,7 +4,7 @@ body {
 
 .heading-1 {
    font-family: 'Inter', sans-serif;
-   font-size: 42px;
+   font-size: 36px;
    font-weight: 700;
    color: #D1DAED;
 }
@@ -75,14 +75,6 @@ body {
    color: #D1DAED;
  } 
  
- 
-
-
-
-
-
-
-
 .box {
    padding-left: 100px;
    margin-top: 10%;
@@ -116,7 +108,53 @@ body {
 }
 
 
+@media (max-width: 990px) {
+   .heading-1 {
+      font-size: 24px;
+   }
+   .heading-2 {
+      font-size: 18px;
+   }
+   .heading-3 {
+      font-size: 16px;
+   }
+   .title {
+      font-size: 16px;
+   }
+   .text {
+      font-size: 14px;
+   }
+   .btn-outline-primary {
+      font-size: 12px;
+      display: block;
+      margin-right: 0 !important;
+      margin-bottom: 5px;
+   }
 
+   .box {
+      padding-left: 50px;
+   }
+   .projects {
+      margin-top: 50px;
+   }
+}
+
+@media (max-width: 768px) {
+   .contact {
+      margin-top: 10%;
+   }
+   .fixed-col {
+      position: relative;
+      height: auto;
+   }
+   .box {
+      padding-left: 10px;
+   }
+   .projects {
+      margin-top: 40px;
+   }
+
+}
 
  
 
