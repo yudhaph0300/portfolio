@@ -107,6 +107,17 @@ body {
    border-radius: 12px;
 }
 
+.button-link {
+   font-size: 14px;
+   text-decoration: none;
+   color: #838C9F;
+}
+.visit-link {
+   font-size: 16px;
+   text-decoration: none;
+   color: #5DE7D2;
+}
+
 
 @media (max-width: 990px) {
    .heading-1 {
