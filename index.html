@@ -153,9 +153,62 @@
               </div>
             </div>
           </div>
+          <div class="design-gallery">
+            <div class="heading-2">Design Gallery</div>
+            <div class="text mt-2">
+              In addition to web development, I am also passionate about 3D
+              designing, illustration, and user interface design. I enjoy
+              exploring the realm of three-dimensional modeling and creating
+              visually stunning and immersive 3D artworks. Illustration allows
+              me to unleash my creativity and bring ideas to life through
+              captivating visuals. Moreover, my interest in user interface
+              design enables me to craft intuitive and user-friendly digital
+              experiences that enhance the usability and aesthetics of various
+              applications. These diverse interests complement my skills as a
+              front-end developer, enabling me to approach projects with a
+              holistic and multidisciplinary perspective.
+            </div>
+            <div class="row mt-4" id="imageGallery"></div>
+          </div>
         </div>
       </div>
     </div>
+
+    <script>
+      // Fungsi untuk mengambil gambar dari API
+      function getImagesFromAPI() {
+        const apiUrl =
+          "https://64c39a0667cfdca3b65ff853.mockapi.io/design-gallery";
+        return fetch(apiUrl)
+          .then((response) => response.json())
+          .catch((error) => console.error("Error:", error));
+      }
+
+      // Fungsi untuk menampilkan galeri foto dengan gambar dari API
+      function displayImageGallery(images) {
+        const imageGallery = document.getElementById("imageGallery");
+
+        images.forEach((image) => {
+          const imageUrl = image.image_url;
+          const imageAlt = image.name;
+
+          const imageElement = document.createElement("div");
+          imageElement.classList.add("col-4", "mb-4");
+
+          const img = document.createElement("img");
+          img.src = imageUrl;
+          img.alt = imageAlt;
+          img.classList.add("img-fluid", "rounded");
+
+          imageElement.appendChild(img);
+          imageGallery.appendChild(imageElement);
+        });
+      }
+
+      // Panggil fungsi getImagesFromAPI untuk mengambil gambar dari API dan menampilkan galeri foto saat halaman dimuat
+      getImagesFromAPI().then((images) => displayImageGallery(images));
+    </script>
+
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
