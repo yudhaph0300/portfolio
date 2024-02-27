@@ -162,6 +162,15 @@ body {
    transform: translateY(0);
 }
 
+.btn-exp {
+   padding: 0;
+   border: none;
+   font-family: 'Work Sans', sans-serif;
+   font-size: 0.9rem;
+   font-weight: 500;
+   color: #777;
+}
+
 
 
 .projects {
