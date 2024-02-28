@@ -1,7 +1,7 @@
 function scrollToSection(sectionId) {
   const section = document.getElementById(sectionId);
   if (section) {
-    const yOffset = -200;
+    const yOffset = -180;
     const y =
       section.getBoundingClientRect().top + window.pageYOffset + yOffset;
     if (window.pageYOffset !== y) {
