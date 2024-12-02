@@ -16,8 +16,6 @@ body {
    flex-direction: column;
 }
 
-
-
 .heading-hero {
    font-family: 'Work Sans', sans-serif;
    font-size: 5rem;
@@ -95,6 +93,19 @@ body {
 .about.animate {
    opacity: 1;
    transform: translateY(0);
+}
+
+.about-image-container {
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+}
+
+.about-image {
+   height: 100%;
+   width: auto;
+   max-width: 100%;
+   object-fit: cover;
 }
 
 .title {
