@@ -71,18 +71,40 @@ body {
 .btn-link {
    font-family: 'Work Sans', sans-serif;
    font-size: 1.5rem;
-   color: #777;
+   color: #222;
    text-decoration: none;
    padding: 0;
+   position: relative;
 }
 
 .btn-link:hover {
    color: #222;
+
 }
 
 .btn-link:active {
    color: #222 !important;
 }
+
+
+.btn-link::after {
+   content: '';
+   position: absolute;
+   bottom: 0;
+   left: 10%;
+   width: 80%;
+   height: 2px;
+   background-color: #222;
+   transform: scaleX(0);
+   transition: transform 0.3s ease;
+   transform-origin: left;
+}
+
+.btn-link:hover::after {
+   transform: scaleX(1);
+}
+
+
 
 .about {
    margin-top: 90px;
@@ -214,7 +236,7 @@ body {
 
 .copy-right {
    font-family: 'Work Sans', sans-serif;
-   font-size: 4rem;
+   font-size: 3.5rem;
    font-weight: 700;
    color: #222;
 }
@@ -222,17 +244,9 @@ body {
 .social .btn-link {
    font-family: 'Work Sans', sans-serif;
    font-size: 1rem;
-   color: #777;
+   color: #222;
    text-decoration: none;
    padding: 0;
-}
-
-.btn-link:hover {
-   color: #222;
-}
-
-.btn-link:active {
-   color: #222 !important;
 }
 
 .btn-experience {
@@ -311,7 +325,7 @@ body {
    }
 
    .copy-right {
-      font-size: 3rem;
+      font-size: 2.5rem;
    }
 }
 
@@ -362,5 +376,11 @@ body {
 
    .card-exp {
       min-height: 250px;
+   }
+
+   .copy-right {
+
+      font-size: 1.5rem;
+
    }
 }

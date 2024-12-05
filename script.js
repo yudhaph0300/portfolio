@@ -85,3 +85,12 @@ function animateProjectSection() {
 
 // Add event listener to trigger animation when the page is scrolled
 window.addEventListener("scroll", animateProjectSection);
+
+document.getElementById("confirmButton").addEventListener("click", function () {
+  window.open("https://bit.ly/graphic-design-portfolio-yudha", "_blank");
+
+  // Close the modal
+  const modalElement = document.getElementById("confirmModal");
+  const modal = bootstrap.Modal.getInstance(modalElement);
+  modal.hide();
+});
