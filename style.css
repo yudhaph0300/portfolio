@@ -199,16 +199,6 @@ body {
    transform: translateY(0);
 }
 
-.btn-exp {
-   padding: 0;
-   border: none;
-   font-family: 'Work Sans', sans-serif;
-   font-size: 0.9rem;
-   font-weight: 500;
-   color: #777;
-}
-
-
 
 .projects {
    margin-top: 120px;
@@ -249,19 +239,17 @@ body {
    padding: 0;
 }
 
-.btn-experience {
-   font-size: 1rem !important;
-}
 
-.btn-experience:hover {
-   font-weight: 700;
+.experience .btn-link {
+   padding: 0;
+   border: none;
+   font-family: 'Work Sans', sans-serif;
+   font-size: 0.9rem;
+   font-weight: 500;
    color: #222;
 }
 
-.btn-experience.active {
-   font-weight: 700;
-   color: #222;
-}
+
 
 .card-exp {
    border: 2px solid #777;
